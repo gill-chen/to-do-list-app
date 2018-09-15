@@ -1,4 +1,4 @@
-# to-do-list-app
+# to-do list app
  
  Simple to-do list app, with no authentication and a shared database. 
  
