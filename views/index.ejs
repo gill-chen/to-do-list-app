@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+    	<title>Gill's Todo List</title>	
+    	<!-- library first, then js script at the end of the document -->
+    	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    	<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    </head>
+    <body>
+    	<div id="container">
+    		<h1>Gill's Todo List</h1>
+    		    <div id="search-bar">
+    		        <input type="text" name="item" placeholder="Add New Item" maxlength="35">
+    		        <i class="fas fa-plus-square"></i>
+    		    </div>
+    		<ul>
+    			<% items.forEach(function(item){ %>
+    			    <% if (item.cross == true){ %> 
+    			         <li class="done" data-cross=<%=item.cross %> data-id= <%=item._id %>><span data-id= <%=item._id %>><i class='far fa-trash-alt'></i></span><%=item.text%></li>
+                    <% } else { %>
+    			    <li data-cross=<%=item.cross %> data-id= <%=item._id %>><span data-id= <%=item._id %>><i class='far fa-trash-alt'></i></span><%=item.text%></li>
+    		        <% } %>
+    			<% }); %>
+    		</ul>
+    	</div>
+    		
+    <script type="text/javascript" src="/scripts/background.js"></script>
+    </body>
+</html> 

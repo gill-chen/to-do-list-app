@@ -1,0 +1,109 @@
+
+#container {
+	width: 400px;
+	margin: 10% auto;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: #f6f8f8;
+	overflow: hidden;
+}
+
+#search-bar {
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+}
+
+.done {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.fa-plus-square {
+	float: right;
+	display: inline-block;
+	width: 10%;
+	padding: 2.5px 0 0 3px;
+	box-sizing: border-box;
+	color: #4ac8e8;
+	background-color: white;
+	font-size: 2em;
+	text-align: center;
+	cursor:pointer;
+}
+.fa-plus-square:hover {
+	color: #2193b0;
+}
+
+html {
+	height: 100%;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: #2193b0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #2193b0, #6dd5ed) fixed; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #2193b0, #6dd5ed) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+	margin: 0;
+	padding: 3% 3%;
+	border-bottom: 1px solid #c5ecf7;
+	background: white;
+	color: #2193b0;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 100%;
+	overflow: hidden;
+}
+input {
+	width: 90%;
+	height: 40px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input:focus{
+	border: 2px solid #c5ecf7;
+	border-radius: 2px;
+	outline: none;
+	background: #fff;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	height: 40px;
+	background: white;
+	/*height:5% doesn't work, the text get out of position, so must specify line-height with px*/
+	line-height: 40px;
+}
+
+/*styles every other item background */
+li:nth-child(2n){
+	background: #f9f8f8;
+}
+
+li span {display: inline-block;
+	width: 0;
+	height: 100%;
+	margin-right: 10px;
+	background: #e74c3c;
+	color: white;
+	text-align: center;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+
